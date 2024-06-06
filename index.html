@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protopolyo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-icon">
+
+        </div>
+        <section class="nav-section">
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#facilities" class="nav-item">Our Facilities</a>
+            <a href="#message-us" class="nav-item">Message Us</a>
+            
+        </section>
+    </nav>
+    <section class="section">
+        <!--Home Page -->
+        <section class="home" id="home">
+            <header>
+                <h2>Hi <span id="name"></span>, welcome to my web</h2>
+            </header>
+
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non unde, exercitationem eligendi enim odio sequi autem est harum vero quisquam ratione ex. Nesciunt delectus cumque, voluptates nihil minus impedit corrupti.</p>
+                <div class="banner-container">
+                    <!--Board-->
+                    <div>
+                        <img class="Board" onclick="plusDivs(1)" src="" alt="">
+                        <img class="Board" onclick="plusDivs(1)" src="" alt="">
+                        <img class="Board" onclick="plusDivs(1)" src="" alt="">
+                        <div>
+                            <button class="prev" onclick="moveSlide(-1)">⬅️</button>
+                            <button class="prev" onclick="moveSlide(1)">➡️</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!--our Facilities-->
+        <section class="facilities" id="facilities">
+            <header>
+                <h2>Facilities</h2>
+            </header>
+            <div class="facility-list">
+                <div class="container-facility">
+                    <div class="facility-satu"></div>
+                    <h4>Anime</h4>
+                </div>
+                <div class="container-facility">
+                    <div class="facility-dua"></div>
+                    <h4>Filem</h4>
+                </div>
+                <div class="container-facility">
+                    <div class="facility-tiga"></div>
+                    <h4>Cartoon</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message Us -->
+    <section class="message-us" id="message-us">
+        <header>
+            <h2>Message Us</h2>
+        </header>
+
+        <section class="message-us-section">
+            <!-- form -->
+            <section class="form-container">
+                <form id="formulir">
+                    <div class="form-group">
+                        <label for="nama" class="">Nama :</label>
+                        <input type="text" id="nama" name="nama" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tgl_lahir" class="">Tanggal Lahir :</label>
+                        <input type="date" id="tgl_lahir" name="tgl_lahir" required> 
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin:</label>
+                        <input type="radio" id="lakilaki" name="jenis_kelamin" value="Laki-laki" required>
+                        <label for="lakilaki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan :</label>
+                        <textarea id="pesan" name="pesan" rows="4" required></textarea> 
+                    </div>
+                    <button type="submit" id="submit">Kirim</button>
+                    
+                </form>
+               
+            </section>
+
+            <!-- Result -->
+            <section class="result-container">
+                <div class="form-result">
+                    <textarea id="result" rows="15" cols="20" readonly></textarea>
+                </div>
+            </section>
+
+        </section>
+    </section>
+    <!-- akhir message us -->
+
+    </section>
+    </body>
+    </html>
